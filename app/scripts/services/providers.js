@@ -1,4 +1,6 @@
 'use strict';
 
 angular.module('packageCalculatorApp')
-  .constant('prices', 42);
+  .constant('providers', [
+    {name: "EMS", maxProcessableWeight: 10, fixedFee: 10, feePerUnit: 10}
+  ]);
