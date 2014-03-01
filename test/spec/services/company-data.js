@@ -12,7 +12,7 @@ describe('Service: companyData', function () {
   }));
 
   it('should do something', function () {
-    expect(!!companyData).toBe(true);
+    expect(companyData.fee).toBeDefined();
   });
 
 });

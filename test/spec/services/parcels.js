@@ -11,8 +11,12 @@ describe('Service: parcels', function () {
     parcels = _parcels_;
   }));
 
-  it('should do something', function () {
-    expect(!!parcels).toBe(true);
+  it('should have create method', function () {
+    expect(parcels.create).toBeDefined();
+  });
+
+  it('should create new object', function () {
+    expect(parcels.create()).toBeDefined();
   });
 
 });
